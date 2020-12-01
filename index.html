@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale= 1.0 ">
+  <meta author="Clarissa Lima Loures">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="portaldefilmes.css">
+  <title>Gitfilmes</title>
+  <link rel="icon" type="image/png" href="/img/logo.png" alt="Logo" />
+  <script src="js_start.js" defer></script>
+</head>
+
+<body>
+
+  <!----------------- Cabecalho -------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-gray-dark">
+    <a class="navbar-brand" href="index.html"><img src="/img/logo.png" width="42" height="42" class = logo></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Filmes<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destaque">Em Destaque</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#avaliações">Avaliações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pagina_pesquisa.html">Pesquisar Filme</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!---- LISTA FILMES-->
+  <div class="capa">
+    <div class="texto-capa">
+      <h1>GitFilmes</h1>
+      <a href="pagina_pesquisa.html" class="btn btn-custom btn-roxo btn-lg">Aproveite o conteúdo Free</a>
+      <a href="pagina_pesquisa.html" class="btn btn-custom btn-branco btn-lg">Procure um filme</a>
+    </div>
+  </div>
+
+  <section class="lançamentos">
+    <h2> Filmes do momento - Lançamentos</h2>
+  </section>
+
+  <main id="main"></main>
+
+
+  
+  <!-- EM DESTAQUE-->
+  <section id="destaque">
+    <p class="h3">Em Destaque</p>
+    <!----------------------------------Posters começam--------------------------------------->
+        <img class="imagem" src="img/capafilme1.jpg" alt="Moonlight">
+        <img class="imagem" src="img/capafilme2.jpg" alt="Joke">
+        <img class="imagem" src="img/capafilme3.jpeg" alt="Troca de Rainhas">
+        <img class="imagem" src="img/capafilme4.jpg" alt="Projeto Gemini">
+  </section>
+
+
+  <!-- Avaliações-->
+  <section id="avaliações">
+    <h3>Avaliações de nossos assinantes</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-*-* coluna"><img class="avaliador" src="img/PESSOA1.jpeg" alt="Avaliador 1">
+          <b>Hideki Kosami</b>
+          <p class="avaliação"><b>Avaliação VFW: </b>Achei esse filme no site e valeu cada segundo! Vale muito a pena ver com os amigos, vocês vão passar muito tempo falando sobre ele.
+          Além disso, e um filme bem diferente e tem muita criatividade. Sempre gostei do roteirista e ele não decepcionou neste filme. </br></br><i class="fas fa-star"> </i><i
+              class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star-half-alt"> </i><i
+              class="far fa-star"> </i></p>
+          <!----------------------------------Kallas termina------------------------------------------------------------------->
+        </div>
+        <div class="col-*-* coluna"><img class="avaliador" src="img/PESSOA2.jpeg" alt="Avaliador 2">
+          <b>Stefan Oliveira</b>
+          <p class="avaliação"><b>Avaliação Enola: </b>Se você está querendo um filme apenas para passar uma tarde de boas... talvez este seja um bom filme.
+            Não foi um filme que me prendeu em seu enredo e me senti motivado a querer mais e mais. É um filme bom para passar o tempo e relaxar.
+            Não sei se foi algo bacana para mim.</br></br><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i class="fas fa-star"> </i><i
+              class="fas fa-star"> </i><i class="fas fa-star"> </i> </i>
+          </p>
+        </div>
+        <!----------------------------------Rafaela termina------------------------------------------------------------------->
+        <div class="col-*-* coluna"><img class="avaliador" src="img/PESSOA3.jpeg" alt="Avaliador 3">
+          <b>Isabela Kasomuni</b>
+          <p class="avaliação"><b>Avaliação Ava: </b> Não entendi nada que aconteceu nesse filme! Alguém pode me explicar? O que acontece na cena final?? Eu não consegui entender!
+          Não achei que foi um filme legal, estou meio irritada com ele.</br></br><i class="fas fa-star"> </i><i class="far fa-star"> </i><i class="far fa-star"> </i><i
+              class="far fa-star"> </i><i class="far fa-star"> </i></p>
+        </div>
+      </div>
+      <!----------------------------------Sabrina termina------------------------------------------------------------------->
+    </div>
+</section>
+
+
+   <!-- Rodape -->
+   <div class="footer-cor">
+    <footer class="container footer">
+
+        <div class="row">
+            <div class="col-10 footer_area">
+                Site desenvolvido po Clarissa Lima.
+
+            </div>
+
+        </div>
+    </footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,908 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-weight: 500;
+    word-spacing: 1%;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+/*********************** cabecalho **********************/
+.navbar {
+    background-color: rgb(235, 14, 14);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(61, 1, 1);
+}
+
+
+/************************** CAPA *****************************/
+
+/* -- Imagem de capa -- */
+.capa {
+    display: table;
+    width: 100%;
+    background: linear-gradient(50deg, #0d0c24, #b10d0d);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    line-height: 1.42857143;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.texto-capa>h1 {
+    font-size: 800%;
+    margin: 18rem;
+}
+
+/* -- Botoes -- */
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    margin: 2rem;
+}
+
+.btn-roxo {
+    background: #000000;
+}
+
+.btn-roxo:hover {
+    background-color: #f1130b;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background-color: white;
+    color: black;
+}
+
+/*********************** Filta filmes **********************/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: rgb(212, 12, 12);
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 5rem;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+
+.movie-info {
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+    color: #eee;
+}
+
+.movie-info span {
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+    color: rgb(6, 241, 6);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+.overview {
+    background-color: rgb(212, 12, 12);
+    color: #eee;
+    padding: 2rem;
+    position: absolute;
+    max-height: 80%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+    color: #eee;
+}
+
+.overview p {
+    color: #eee;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+
+section h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1.5%;
+    font-size: 300%;
+    color: rgb(212, 12, 12);
+}
+
+/************************* Destaques ***********************/
+
+#destaque {
+    background-color: rgb(48, 48, 48);
+}
+
+.container {
+    line-height: 100%;
+}
+
+
+#destaque>p.h3 {
+    font-weight: bold;
+    position: relative;
+    margin: 30px 20px 30px 142px;
+    color: red;
+}
+
+.banner {
+    position: relative;
+    left: 1%;
+}
+
+.btn-group {
+    float: right;
+    position: relative;
+    right: 12%;
+    bottom: 10%;
+    z-index: 2;
+}
+
+.imagem {
+    height: auto;
+    overflow: hidden;
+    width: 20%;
+    margin: 1rem;
+    position: relative;
+}
+
+/********************* AVALIAÇOES ******************************/
+section#avaliações>h3,
+section#entrevistas>h3 {
+    margin: 20px 20px 30px 60px;
+    color: rgb(212, 12, 12);
+    font-size: 300%;
+}
+
+.avaliador {
+    border-radius: 50%;
+    width: 36px;
+    height: auto;
+    margin-right: 7px;
+    margin-bottom: 1px;
+    position: relative;
+    right: 50px;
+}
+
+.coluna {
+    display: flex;
+    align-items: center;
+    width: 36%;
+    flex-wrap: wrap;
+    margin: 5px -30px 10px -30px;
+    position: relative;
+    left: 70px;
+}
+
+.coluna>b {
+    font-size: large;
+    position: relative;
+    bottom: 3px;
+    right: 45px;
+    color: #eee;
+}
+
+.avaliação {
+    line-height: 100%;
+    word-spacing: 0.0001px;
+    align-items: center;
+    max-width: 250px;
+}
+
+
+section#avaliações>div {
+    position: relative;
+    left: 30px;
+    color: #eee;
+}
+
+/********************* Entrevistas ******************************/
+#entrevistas {
+    background-color: black;
+    line-height: 100%;
+}
+
+.titulo {
+    font-size: larger;
+    color: #eee;
+}
+
+.makingof,
+div.makingof>div {
+    position: relative;
+    color: #eee;
+
+
+}
+
+
+.videoEntrevista {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/************ FIM ***********************/
+
+.footer-cor {
+    background: rgb(212, 12, 12);
+    color: white;
+
+}
+
+.footer_area {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.footer_area img {
+    max-width: 100px;
+}
+
+#direitos {
+    margin-top: 20px;
+}
+
+
+/******************** Pesquisa *******************/
+.pesquisa {
+    position: relative;
+    margin: 1rem;
+
+}
+
+/********************* Config ******************************/
+
+@media (max-width: 1030px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 300px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0.3rem 0.3rem;
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        margin: 30px 20px 30px 142px;
+        color: rgb(212, 12, 12);
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 45%;
+        margin: 1.2rem;
+        position: relative;
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        margin: 0px 20px 30px 60px;
+        color: rgb(212, 12, 12);
+        font-size: 300%;
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 20%;
+        margin: 1rem;
+        position: relative;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 800%;
+        margin: 15rem;
+    }
+
+    .btn-custom {
+        color: white;
+        border-radius: 500px;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        text-transform: uppercase;
+        transition: background 0.4s, color 0.4s;
+        margin: 4rem;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 120px;
+    }
+
+    .movie img {
+        width: 100%;
+    }
+
+    .movie-info {
+        color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    .movie-info h3 {
+        margin: 0;
+        color: #eee;
+        font-size: 80%;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 80%;
+        padding: 0.25rem 0.2rem;
+    }
+
+    .movie-info span.green {
+        color: rgb(6, 241, 6);
+    }
+
+    .movie-info span.orange {
+        color: orange;
+    }
+
+    .movie-info span.red {
+        color: rgb(189, 42, 42);
+    }
+
+    .overview {
+        background-color: rgb(212, 12, 12);
+        color: #eee;
+        padding: 2rem;
+        position: absolute;
+        max-height: 80%;
+        overflow: auto;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transform: translateY(101%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .overview h3 {
+        margin-top: 0;
+        color: blue;
+        font-size: 40%;
+    }
+
+    .overview p {
+        color: #eee;
+    }
+
+    .movie:hover .overview {
+        transform: translateY(0);
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        color: rgb(212, 12, 12);
+        font-size: 200%;
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 20%;
+        margin: 1rem;
+        position: relative;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 650%;
+        margin: 12.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 0.8rem;
+        width: 150px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-size: 60%;
+        font-weight: bold;
+        padding: 0.2rem 0.2rem;
+    }
+
+    .movie-info h3 {
+        margin: 0;
+        color: #eee;
+        font-size: 60%;
+    }
+
+    section h2 {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 1.5%;
+        font-size: 150%;
+        color: rgb(212, 12, 12);
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        color: rgb(212, 12, 12);
+        font-size: 130%;
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 19%;
+        margin: 0.9rem;
+        position: relative;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 350%;
+        margin: 9.5rem;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 170px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0.3rem 0.3rem;
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        color: rgb(212, 12, 12);
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 40%;
+        margin: 1rem;
+        position: relative;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 450%;
+        margin: 3.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 150px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-weight: bold;
+        padding: 0.3rem 0.3rem;
+    }
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        color: rgb(212, 12, 12);
+        font-size: 140%;
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 40%;
+        margin: 1rem;
+        position: relative;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 450%;
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 140px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-size: 70%;
+        font-weight: bold;
+        padding: 0.2rem 0.2rem;
+    }
+
+    .movie-info h3 {
+        margin: 0;
+        color: #eee;
+        font-size: 60%;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 350%;
+        margin: 5rem;
+    }
+
+    s
+}
+
+@media (max-width: 320px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 120px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-size: 60%;
+        font-weight: bold;
+        padding: 0.2rem 0.2rem;
+    }
+
+    .movie-info h3 {
+        margin: 0;
+        color: #eee;
+        font-size: 60%;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 350%;
+        margin: 2.5rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .movie {
+        background-color: rgb(212, 12, 12);
+        border-radius: 3px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: relative;
+        margin: 1rem;
+        width: 100px;
+    }
+
+    .movie-info span {
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+        font-size: 60%;
+        font-weight: bold;
+        padding: 0.2rem 0.2rem;
+    }
+
+    .movie-info h3 {
+        margin: 0;
+        color: #eee;
+        font-size: 60%;
+    }
+
+    section h2 {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 1.5%;
+        font-size: 150%;
+        color: rgb(212, 12, 12);
+    }
+
+
+    #destaque>p.h3 {
+        font-weight: bold;
+        color: rgb(212, 12, 12);
+    }
+
+    .imagem {
+        height: auto;
+        overflow: hidden;
+        width: 35%;
+        margin: 1rem;
+        position: relative;
+    }
+
+    section#avaliações {
+        display: none;
+    }
+
+    .capa {
+        display: table;
+        width: 60%;
+        background: linear-gradient(50deg, #0d0c24, #b10d0d);
+        background-attachment: fixed;
+        font-family: Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        line-height: 1.42857143;
+    }
+
+    .texto-capa {
+        text-align: center;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .texto-capa>h1 {
+        font-size: 350%;
+        margin: 1.35rem;
+    }
+
+}
